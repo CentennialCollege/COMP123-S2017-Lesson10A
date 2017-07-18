@@ -7,7 +7,7 @@ using System.Text;
  * Name: Tom Tsiliopoulos
  * Date: July 11, 2017
  * Description: This is the new Power data type
- * Version: 0.2 - Add a custom constructor to assign Name and Rank
+ * Version: 0.3 - Overloaded the > and < operators
  */
 
 namespace COMP123_S2017_Lesson10A
@@ -34,6 +34,30 @@ namespace COMP123_S2017_Lesson10A
         {
             this.Name = name;
             this.Rank = rank;
+        }
+
+        // OVERLOADED METHODS
+
+        /// <summary>
+        /// This method overloads the > operator for the Power class.
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>Returns true lhs > rhs</returns>
+        public static bool operator >(Power lhs, Power rhs)
+        {
+            return (lhs.Rank > rhs.Rank);
+        }
+
+        /// <summary>
+        /// This method overloads the < operator for the Power class.
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>Returns true if lhs < rhsk</returns>
+        public static bool operator <(Power lhs, Power rhs)
+        {
+            return (lhs.Rank < rhs.Rank);
         }
     }
 }

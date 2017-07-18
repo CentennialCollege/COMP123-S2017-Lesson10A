@@ -14,13 +14,6 @@
       <FileName>SuperHuman.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="COMP123_S2017_Lesson10A.Power">
-    <Position X="5.25" Y="1" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Power.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="COMP123_S2017_Lesson10A.Program">
     <Position X="8" Y="1" Width="2" />
     <TypeIdentifier>
@@ -43,6 +36,13 @@
       <FileName>SuperVillain.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COMP123_S2017_Lesson10A.Power">
+    <Position X="5.25" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Power.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Interface Name="COMP123_S2017_Lesson10A.IHasKarma">
     <Position X="10.25" Y="1" Width="2" />
