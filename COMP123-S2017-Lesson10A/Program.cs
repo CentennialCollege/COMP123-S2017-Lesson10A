@@ -32,7 +32,8 @@ namespace COMP123_S2017_Lesson10A
             Console.WriteLine(superVillain.ToString());
             Console.WriteLine("Malice: " + superVillain.Malice);
             Console.WriteLine();
-            Console.WriteLine(superVillain._findPowerIndex("Spider Senses")); 
+
+           
 
         }
     }
