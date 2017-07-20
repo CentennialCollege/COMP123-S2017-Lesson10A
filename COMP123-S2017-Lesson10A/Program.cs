@@ -33,7 +33,10 @@ namespace COMP123_S2017_Lesson10A
             Console.WriteLine("Malice: " + superVillain.Malice);
             Console.WriteLine();
 
-           
+           if(superVillain.GetPower("Shadow Casting") < superVillain.GetPower("Mind Control"))
+            {
+                Console.WriteLine("Shadow Casting is more powerful than Mind Control");
+            }
 
         }
     }

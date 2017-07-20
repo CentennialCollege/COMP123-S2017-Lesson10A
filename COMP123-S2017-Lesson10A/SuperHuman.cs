@@ -101,14 +101,14 @@ namespace COMP123_S2017_Lesson10A
         /// </summary>
         /// <param name="name"></param>
         /// <returns>This returns the Power Rank Number or 0 if the power is not found</returns>
-        public int GetPowerRank(string name)
+        public Power GetPower(string name)
         {
             if (this._findPowerIndex(name) != -1)
             {
-                return this.Powers[this._findPowerIndex(name)].Rank;
+                return this.Powers[this._findPowerIndex(name)];
             }
 
-            return 0;
+            return new Power("Unknown Power", 0);
         }
 
         // PUBLIC OVERRIDDEN METHODS
