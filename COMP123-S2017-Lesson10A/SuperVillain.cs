@@ -8,7 +8,7 @@ using System.Text;
  * Date: July 18, 2017
  * Description: This is the SuperVillain class which inherits from the SuperHuman class
  * and implements the IHasMalice interface
- * Version: 0.2 - Implemented the ITrainable interface
+ * Version: 0.3 - refactored - removed the ITrainable Interface
  */
 
 namespace COMP123_S2017_Lesson10A
@@ -16,7 +16,7 @@ namespace COMP123_S2017_Lesson10A
     /// <summary>
     /// This is the SuperVillain Class
     /// </summary>
-    public class SuperVillain : SuperHuman, IHasMalice, ITrainable
+    public class SuperVillain : SuperHuman, IHasMalice
     {
         // PRIVATE INSTANCE VARIABLES
         private int _malice;
@@ -48,10 +48,12 @@ namespace COMP123_S2017_Lesson10A
             this.Malice = malice;
         }
 
-        public void Trains()
+        
+        public override void Trains()
         {
             Console.WriteLine("Not Implemented");
         }
+        
 
     }
 }

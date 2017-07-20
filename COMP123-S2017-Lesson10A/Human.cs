@@ -51,5 +51,7 @@ namespace COMP123_S2017_Lesson10A
         // PUBLIC ABSTRACT METHODS
 
         public abstract void DisplaySkills();
+
+        public abstract void Trains();
     }
 }
