@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Tom Tsiliopoulos
  * Date: July 11, 2017
  * Description: This is the driver class for my project
- * Version: 0.5 - Implemented the SuperVillain class
+ * Version: 0.6 - Implemented the AntiHero Class
  */
 
 namespace COMP123_S2017_Lesson10A
@@ -33,7 +33,14 @@ namespace COMP123_S2017_Lesson10A
             Console.WriteLine("Malice: " + superVillain.Malice);
             Console.WriteLine();
 
-           if(superVillain.GetPower("Shadow Casting") < superVillain.GetPower("Mind Control"))
+            AntiHero batman = new AntiHero("Batman", 20, 20);
+            batman.AddPower("Super Intelligence", 50);
+            Console.WriteLine(batman.ToString());
+            Console.WriteLine("Karma: " + batman.Karma);
+            Console.WriteLine("Malice: " + batman.Malice);
+            Console.WriteLine();
+
+            if (superVillain.GetPower("Shadow Casting") < superVillain.GetPower("Mind Control"))
             {
                 Console.WriteLine("Shadow Casting is more powerful than Mind Control");
             }
